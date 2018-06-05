@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Primera  Tarea</title>
+<style>
+    table, th, td{
+        padding:5px;
+        border: 3px solid chocolate;
+        border: 1px solid black;
+        border-collapse: collapse;
+
+    }
+</style>
+
+<script>
+
+    function llenarColumna1(){
+        var nombre = document.getElementById("labelNombre");
+        nombre.setItem("cuadroNombre", nombre.value);      
+
+    }
+</script>
+
+</head>
+<body>
+    <h1 style="color: blueviolet">Pagina de Regitros</h1>
+
+    <table>
+        <tr>
+            <td><label>Nombre:</label></td>
+            <td><input id="cuadroNombre" type="text"></td>
+        </tr>
+        <tr>
+            <td><label>Matricula</label></td>
+            <td><input id="cuadroMatricula" type="text"></td>
+        </tr>
+        <tr>
+            <td><label>ID</label></td>
+            <td><input id="cuadroID" type="text"></td>
+        </tr>
+        <tr>
+            <td align="center"><input onclick="llenarColumna1" id="botonGuardar" type="submit" value="Guardar" ></td>
+        </tr>
+    </table>      
+
+    <table style="width: 100%">
+        <tr>
+            <td><label>Matricula</label></td>
+            <td><label>Nombre</label></td>
+            <td><label>Id</label></td>
+            <td><label></label></td> 
+        </tr>
+        <tr>
+            <td><label id="labelNombre"></label></td>
+            <td><label id="labelMatricula"></label></td>
+            <td><label id="labelID"></label></td>
+            <td><label></label></td>
+        </tr>
+       
+    </table>
+
+
+</body>
+
+</html>
