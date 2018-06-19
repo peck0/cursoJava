@@ -1,75 +1,73 @@
 <html>
+
 <head>
 
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
 
     <script src="app/Estudiante.js"></script>
     <script src="app/formulario.js"></script>
+    <script src="app/jquery-3.3.1.js"></script>
 
     <style>
-    .itla-class{
-        color: red;
-        font-size: 25px;
-    }
+        .itla-class {
+            color: red;
+            font-size: 25px;
+        }
 
-    .itla-background{
-        background-color: green;
-    }
+        .itla-background {
+            background-color: green;
+        }
 
-    input {
-        background-color:ivory;
-    }
-
-
+        input {
+            background-color: ivory;
+        }
     </style>
-    
+
 </head>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
                 <h1 class="itla-class">Registro de Estudiantes</h1>
             </div>
-        </div>    
-    <div class="row">
-        <div class="col">                                      
-            <form>
-                <div class="form-group">
-                    <label>Nombre :</label>
-                    <input class="form-control" type="text" name="nombre" id="nombre">
-                </div>
-                <div class="form-group">
-                    <label>Matricula :</label>
-                    <input class="form-control" type="text" name="matricula" id="matricula">
-                </div>
-                <div class="form-group">
-                    <label>Identificacion :</label>
-                    <input class="form-control" type="text" name="identificacion" id="identificacion">
-                </div>
-                <button type="button" onclick="leerEstudiante();" class="btn btn-primary">Agregar</button>
-                               
-            </form>            
         </div>
-        <div class="col">
-            <table class="table" id="tabla_estudiante">
-                <thead>
-                    <th>Nombre</th>
-                    <th>Matricula</th>                    
-                    <th>Identificacion</th>
-                </thead>
-                <tbody>
-                            
-                </tbody>
-            </table>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label>Nombre:</label>
+                        <input class="form-control" type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label>Matricula:</label>
+                        <input class="form-control" type="text" name="matricula" id="matricula">
+                    </div>
+                    <div class="form-group">
+                        <label>Identificacion:</label>
+                        <input class="form-control" type="text" name="identificacion" id="identificacion">
+                    </div>
+                    <button type="button" onclick="leerEstudiante();" class="btn btn-primary">Agregar</button>
+
+                </form>
             </div>
-        </div>        
-    </div>    
-</div>
+            <div class="col">
+                <table class="table table" id="tabla_estudiante">
+                    <thead>
+                        <th>Nombre</th>
+                        <th>Matricula</th>
+                        <th>Identificacion</th>
+                        <th>Opciones</th>
+                    </thead>
+                    <tbody>
 
-
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
